@@ -33,7 +33,7 @@ namespace ElFinder.Integration
 						Name = info.Name,
 						DateTime = info.LastWriteTime,
 						Mime = "text/plain",
-						Rights = ElFinderRights.Read//для тестов
+						Rights = ElFinderRights.Read | ElFinderRights.Write//для тестов
 					};
 		}
 
@@ -46,7 +46,7 @@ namespace ElFinder.Integration
 			{
 				Name = info.FullName.Equals(rootDirPath) ? rootDirName : info.Name,
 				DateTime = info.LastWriteTime,
-				Rights = ElFinderRights.Read//для тестов
+				Rights = ElFinderRights.Read | ElFinderRights.Write//для тестов
 			};
 			if (!info.FullName.Equals(rootDirPath))
 				result.IdParent = String.IsNullOrEmpty(parent) ? EncodePath(rootDirName) : EncodePath(Path.Combine(rootDirName, parent));
