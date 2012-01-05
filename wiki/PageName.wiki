@@ -1,11 +1,6 @@
-#summary One-sentence summary of this page.
+#summary integration with online editor
 
 = Introduction =
-
-Add your content here.
-
-
-= Details =
 
 For details on integration with elRTE see: https://github.com/Studio-42/elFinder/wiki/Integration-with-elRTE-1.x
 
